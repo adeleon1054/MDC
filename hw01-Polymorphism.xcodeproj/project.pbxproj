@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F53986941F7A01FA00248F39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53986931F7A01FA00248F39 /* main.m */; };
+		F539869C1F7A023C00248F39 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F539869B1F7A023C00248F39 /* Person.m */; };
+		F539869F1F7A027800248F39 /* MDCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F539869E1F7A027800248F39 /* MDCPerson.m */; };
+		F53986A21F7A02AA00248F39 /* MDCProfessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F53986A11F7A02AA00248F39 /* MDCProfessor.m */; };
+		F53986A51F7A032E00248F39 /* MDCStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = F53986A41F7A032E00248F39 /* MDCStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		F53986901F7A01FA00248F39 /* hw01-Polymorphism */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hw01-Polymorphism"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53986931F7A01FA00248F39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F539869A1F7A023C00248F39 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F539869B1F7A023C00248F39 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F539869D1F7A027800248F39 /* MDCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCPerson.h; sourceTree = "<group>"; };
+		F539869E1F7A027800248F39 /* MDCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCPerson.m; sourceTree = "<group>"; };
+		F53986A01F7A02AA00248F39 /* MDCProfessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCProfessor.h; sourceTree = "<group>"; };
+		F53986A11F7A02AA00248F39 /* MDCProfessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCProfessor.m; sourceTree = "<group>"; };
+		F53986A31F7A032E00248F39 /* MDCStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCStudent.h; sourceTree = "<group>"; };
+		F53986A41F7A032E00248F39 /* MDCStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				F53986931F7A01FA00248F39 /* main.m */,
+				F539869A1F7A023C00248F39 /* Person.h */,
+				F539869B1F7A023C00248F39 /* Person.m */,
+				F539869D1F7A027800248F39 /* MDCPerson.h */,
+				F539869E1F7A027800248F39 /* MDCPerson.m */,
+				F53986A01F7A02AA00248F39 /* MDCProfessor.h */,
+				F53986A11F7A02AA00248F39 /* MDCProfessor.m */,
+				F53986A31F7A032E00248F39 /* MDCStudent.h */,
+				F53986A41F7A032E00248F39 /* MDCStudent.m */,
 			);
 			path = "hw01-Polymorphism";
 			sourceTree = "<group>";
@@ -119,6 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53986A51F7A032E00248F39 /* MDCStudent.m in Sources */,
+				F53986A21F7A02AA00248F39 /* MDCProfessor.m in Sources */,
+				F539869F1F7A027800248F39 /* MDCPerson.m in Sources */,
+				F539869C1F7A023C00248F39 /* Person.m in Sources */,
 				F53986941F7A01FA00248F39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
